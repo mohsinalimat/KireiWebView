@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B09AB37C1B4E01F900637342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB37B1B4E01F900637342 /* AppDelegate.swift */; };
+		B09AB37E1B4E01F900637342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB37D1B4E01F900637342 /* ViewController.swift */; };
+		B09AB3811B4E01F900637342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AB37F1B4E01F900637342 /* Main.storyboard */; };
+		B09AB3831B4E01F900637342 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09AB3821B4E01F900637342 /* Images.xcassets */; };
+		B09AB3861B4E01F900637342 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09AB3841B4E01F900637342 /* LaunchScreen.xib */; };
+		B09AB3921B4E01F900637342 /* KireiWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB3911B4E01F900637342 /* KireiWebViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B09AB38C1B4E01F900637342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09AB36E1B4E01F900637342 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09AB3751B4E01F900637342;
+			remoteInfo = KireiWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B09AB3761B4E01F900637342 /* KireiWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KireiWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09AB37A1B4E01F900637342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09AB37B1B4E01F900637342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B09AB37D1B4E01F900637342 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B09AB3801B4E01F900637342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B09AB3821B4E01F900637342 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B09AB3851B4E01F900637342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B09AB38B1B4E01F900637342 /* KireiWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KireiWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09AB3901B4E01F900637342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09AB3911B4E01F900637342 /* KireiWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KireiWebViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09AB3731B4E01F900637342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09AB3881B4E01F900637342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09AB36D1B4E01F900637342 = {
+			isa = PBXGroup;
+			children = (
+				B09AB3781B4E01F900637342 /* KireiWebView */,
+				B09AB38E1B4E01F900637342 /* KireiWebViewTests */,
+				B09AB3771B4E01F900637342 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B09AB3771B4E01F900637342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB3761B4E01F900637342 /* KireiWebView.app */,
+				B09AB38B1B4E01F900637342 /* KireiWebViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B09AB3781B4E01F900637342 /* KireiWebView */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB37B1B4E01F900637342 /* AppDelegate.swift */,
+				B09AB37D1B4E01F900637342 /* ViewController.swift */,
+				B09AB37F1B4E01F900637342 /* Main.storyboard */,
+				B09AB3821B4E01F900637342 /* Images.xcassets */,
+				B09AB3841B4E01F900637342 /* LaunchScreen.xib */,
+				B09AB3791B4E01F900637342 /* Supporting Files */,
+			);
+			path = KireiWebView;
+			sourceTree = "<group>";
+		};
+		B09AB3791B4E01F900637342 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB37A1B4E01F900637342 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B09AB38E1B4E01F900637342 /* KireiWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB3911B4E01F900637342 /* KireiWebViewTests.swift */,
+				B09AB38F1B4E01F900637342 /* Supporting Files */,
+			);
+			path = KireiWebViewTests;
+			sourceTree = "<group>";
+		};
+		B09AB38F1B4E01F900637342 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB3901B4E01F900637342 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B09AB3751B4E01F900637342 /* KireiWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09AB3951B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebView" */;
+			buildPhases = (
+				B09AB3721B4E01F900637342 /* Sources */,
+				B09AB3731B4E01F900637342 /* Frameworks */,
+				B09AB3741B4E01F900637342 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KireiWebView;
+			productName = KireiWebView;
+			productReference = B09AB3761B4E01F900637342 /* KireiWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B09AB38A1B4E01F900637342 /* KireiWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09AB3981B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebViewTests" */;
+			buildPhases = (
+				B09AB3871B4E01F900637342 /* Sources */,
+				B09AB3881B4E01F900637342 /* Frameworks */,
+				B09AB3891B4E01F900637342 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09AB38D1B4E01F900637342 /* PBXTargetDependency */,
+			);
+			name = KireiWebViewTests;
+			productName = KireiWebViewTests;
+			productReference = B09AB38B1B4E01F900637342 /* KireiWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09AB36E1B4E01F900637342 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Uniface;
+				TargetAttributes = {
+					B09AB3751B4E01F900637342 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B09AB38A1B4E01F900637342 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B09AB3751B4E01F900637342;
+					};
+				};
+			};
+			buildConfigurationList = B09AB3711B4E01F900637342 /* Build configuration list for PBXProject "KireiWebView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09AB36D1B4E01F900637342;
+			productRefGroup = B09AB3771B4E01F900637342 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B09AB3751B4E01F900637342 /* KireiWebView */,
+				B09AB38A1B4E01F900637342 /* KireiWebViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09AB3741B4E01F900637342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09AB3811B4E01F900637342 /* Main.storyboard in Resources */,
+				B09AB3861B4E01F900637342 /* LaunchScreen.xib in Resources */,
+				B09AB3831B4E01F900637342 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09AB3891B4E01F900637342 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09AB3721B4E01F900637342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09AB37E1B4E01F900637342 /* ViewController.swift in Sources */,
+				B09AB37C1B4E01F900637342 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09AB3871B4E01F900637342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09AB3921B4E01F900637342 /* KireiWebViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B09AB38D1B4E01F900637342 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09AB3751B4E01F900637342 /* KireiWebView */;
+			targetProxy = B09AB38C1B4E01F900637342 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B09AB37F1B4E01F900637342 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09AB3801B4E01F900637342 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B09AB3841B4E01F900637342 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09AB3851B4E01F900637342 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B09AB3931B4E01F900637342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B09AB3941B4E01F900637342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B09AB3961B4E01F900637342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KireiWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B09AB3971B4E01F900637342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KireiWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B09AB3991B4E01F900637342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KireiWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KireiWebView.app/KireiWebView";
+			};
+			name = Debug;
+		};
+		B09AB39A1B4E01F900637342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KireiWebViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KireiWebView.app/KireiWebView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09AB3711B4E01F900637342 /* Build configuration list for PBXProject "KireiWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09AB3931B4E01F900637342 /* Debug */,
+				B09AB3941B4E01F900637342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09AB3951B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09AB3961B4E01F900637342 /* Debug */,
+				B09AB3971B4E01F900637342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B09AB3981B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09AB3991B4E01F900637342 /* Debug */,
+				B09AB39A1B4E01F900637342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09AB36E1B4E01F900637342 /* Project object */;
+}
