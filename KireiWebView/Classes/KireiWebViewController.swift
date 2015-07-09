@@ -23,7 +23,6 @@ class KireiWebViewController: UIViewController {
         initialURL = ""
         super.init(coder: aDecoder)
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +33,5 @@ class KireiWebViewController: UIViewController {
             webView.loadRequest(NSURLRequest(URL: url))
         }
     }
-    
 }
 

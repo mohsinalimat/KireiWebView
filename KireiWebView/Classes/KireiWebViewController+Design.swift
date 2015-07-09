@@ -102,6 +102,9 @@ extension KireiWebViewController {
         backButton.setImage(imageNamed("back"), forState: .Normal)
         nextButton.setImage(imageNamed("next"), forState: .Normal)
         
+        backButton.enabled = false
+        nextButton.enabled = false
+        
         footer.addSubview(backButton)
         footer.addSubview(nextButton)
         
