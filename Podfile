@@ -3,7 +3,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'KireiWebView' do
-pod 'SnapKit', '~> 0.12.0'
+pod 'SnapKit'
 end
 
 target 'KireiWebViewTests' do
