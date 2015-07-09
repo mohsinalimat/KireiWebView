@@ -61,16 +61,12 @@ extension KireiWebViewController {
         
         let rect = UIView()
         
-        let closeButton = UIButton()
         closeButton.setImage(imageNamed("close"), forState: UIControlState.Normal)
-        //        closeButton.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.2)
         
         let titleLabel = UILabel()
         titleLabel.font = hirakakuFont(14)
         titleLabel.text = "KireiKirei-Web View Made with London"
         titleLabel.textColor = UIColor(white: 134/255, alpha: 1)
-        
-        //        rect.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.2)
         
         rect.addSubview(closeButton)
         rect.addSubview(titleLabel)
@@ -85,14 +81,12 @@ extension KireiWebViewController {
             make.size.equalTo(44)
             make.left.equalTo(header)
             make.centerY.equalTo(rect)
-            //            make.bottom.equalTo(rect).offset(-6)
         }
         titleLabel.snp_makeConstraints { make in
             make.left.equalTo(closeButton.snp_right).offset(2)
             make.right.equalTo(self.view).offset(-16)//?
             make.centerY.equalTo(closeButton)
         }
-        //        titleLabel.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.2)
     }
     
     func layoutFooter(footer:UIView) {
@@ -119,8 +113,6 @@ extension KireiWebViewController {
             make.centerY.equalTo(footer)
         }
         
-        
-        let shareButton = UIButton()
         shareButton.setImage(imageNamed("share"), forState: .Normal)
         footer.addSubview(shareButton)
         shareButton.snp_makeConstraints { make in
@@ -128,7 +120,6 @@ extension KireiWebViewController {
             make.right.equalTo(footer)
             make.centerY.equalTo(footer)
         }
-        
         
         let safariButton = UIButton()
         safariButton.setTitle("Safariでみる", forState: .Normal)

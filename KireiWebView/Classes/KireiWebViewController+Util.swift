@@ -24,4 +24,29 @@ extension KireiWebViewController {
     func hirakakuFont(size: CGFloat) -> UIFont {
         return UIFont(name: "HiraKakuProN-W3", size: size)!
     }
+    
+    
+    
+    func openActivityView(completion:(()->())?) {
+        println("openActivityView")
+        var items:[AnyObject] = []
+        if webView.title != nil {
+            items.append(webView.title!)
+        }
+        if webView.URL != nil {
+            items.append(webView.URL!)
+        }
+        
+        let activityVC = UIActivityViewController(
+            activityItems: items,
+            applicationActivities: nil
+        )
+        activityVC.completionWithItemsHandler = {(activityType, isCompleted:Bool, returnedItems:Array!, error:NSError!) in
+            if (isCompleted) {
+                completion?()
+            }
+        }
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
+
 }
