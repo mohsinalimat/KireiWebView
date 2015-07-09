@@ -12,14 +12,14 @@ import SnapKit
 
 public class KireiWebViewController: UIViewController, WKNavigationDelegate {
     
-    var webView: WKWebView!
-    private let initialURL:String
     public var shareButtonAction: ((url:NSURL?, title:String?)->())? = nil
-
     public var enableOpenInSafari = false
     public var openInSafariText = "Open in Safari"
+    public var enablePcUserAgent = false
     
+    private let initialURL:String
     
+    var webView: WKWebView!
     let shareButton = UIButton()
     let closeButton = UIButton()
     let safariButton = UIButton()
@@ -41,13 +41,17 @@ public class KireiWebViewController: UIViewController, WKNavigationDelegate {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        changeUserAgentAsPC()
-        webView = WKWebView()
-        layout()
-        setupButtonActions()
         
+        if enablePcUserAgent == true {
+            changeUserAgentAsPC()
+        }
+
+        webView = WKWebView()
         webView.navigationDelegate = self
         
+        layout()
+        setupButtonActions()
+    
         if let url = NSURL(string: initialURL){
             webView.loadRequest(NSURLRequest(URL: url))
         }

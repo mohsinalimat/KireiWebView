@@ -9,8 +9,8 @@
 import UIKit
 
 
-// util
 extension KireiWebViewController {
+
     func changeUserAgentAsPC(){
         let userAgentStr = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.63 Safari/537.36"
         let dic:NSDictionary = ["UserAgent":userAgentStr]
@@ -24,8 +24,6 @@ extension KireiWebViewController {
     func hirakakuFont(size: CGFloat) -> UIFont {
         return UIFont(name: "HiraKakuProN-W3", size: size)!
     }
-    
-    
     
     func openActivityView(completion:(()->())?) {
         println("openActivityView")

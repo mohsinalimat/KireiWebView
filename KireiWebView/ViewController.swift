@@ -14,8 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let testView = UIButton()
-        testView.frame = CGRect(x: 100, y: 100, width: 100, height: 300)
-        testView.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.2)
+        testView.frame = CGRect(x: 0, y: 0, width: 88, height: 88)
+        testView.center = self.view.center
+        testView.setTitle("open", forState: .Normal)
+        testView.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         self.view.addSubview(testView)
         testView.addTarget(self, action: "didTapButton", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -26,10 +28,11 @@ class ViewController: UIViewController {
     }
 
     func didTapButton() {
-        let url = "http://okini.eplus.jp/redirect/s/58851/1505140031"
+        let url = "http://twitter.com"
         let kireiWebView = KireiWebViewController(url: url)
         kireiWebView.enableOpenInSafari = true
         kireiWebView.openInSafariText = "Safariでみる"
+        kireiWebView.enablePcUserAgent = true
         kireiWebView.shareButtonAction = { url, title in
             println(title)
             println(url)

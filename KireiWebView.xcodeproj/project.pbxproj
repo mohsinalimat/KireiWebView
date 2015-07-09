@@ -113,10 +113,10 @@
 				B09AB39B1B4E023D00637342 /* Classes */,
 				B09AB37B1B4E01F900637342 /* AppDelegate.swift */,
 				B09AB37D1B4E01F900637342 /* ViewController.swift */,
+				B09AB39E1B4E0AAE00637342 /* NSTimerEx.swift */,
 				B09AB37F1B4E01F900637342 /* Main.storyboard */,
 				B09AB3841B4E01F900637342 /* LaunchScreen.xib */,
 				B09AB3791B4E01F900637342 /* Supporting Files */,
-				B09AB39E1B4E0AAE00637342 /* NSTimerEx.swift */,
 			);
 			path = KireiWebView;
 			sourceTree = "<group>";

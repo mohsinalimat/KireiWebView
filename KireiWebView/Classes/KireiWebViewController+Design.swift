@@ -84,6 +84,7 @@ extension KireiWebViewController {
             make.left.equalTo(closeButton.snp_right).offset(2)
             make.right.equalTo(self.view).offset(-16)//?
             make.centerY.equalTo(closeButton)
+            make.height.equalTo(rect)
         }
     }
     
