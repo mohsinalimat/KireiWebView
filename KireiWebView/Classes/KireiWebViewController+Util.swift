@@ -49,4 +49,11 @@ extension KireiWebViewController {
         self.presentViewController(activityVC, animated: true, completion: nil)
     }
 
+    func openSafari(url: NSURL?) {
+        if url != nil {
+            if UIApplication.sharedApplication().canOpenURL(url!){
+                UIApplication.sharedApplication().openURL(url!)
+            }
+        }
+    }
 }

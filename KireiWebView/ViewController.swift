@@ -28,6 +28,12 @@ class ViewController: UIViewController {
     func didTapButton() {
         let url = "http://okini.eplus.jp/redirect/s/58851/1505140031"
         let kireiWebView = KireiWebViewController(url: url)
+        kireiWebView.enableOpenInSafari = true
+        kireiWebView.openInSafariText = "Safariでみる"
+        kireiWebView.shareButtonAction = { url, title in
+            println(title)
+            println(url)
+        }
         self.presentViewController(kireiWebView, animated: true, completion: nil)
     }
 

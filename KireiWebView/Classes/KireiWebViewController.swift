@@ -10,15 +10,26 @@ import UIKit
 import WebKit
 import SnapKit
 
-public class KireiWebViewController: UIViewController {
+public class KireiWebViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
     private let initialURL:String
     public var shareButtonAction: ((url:NSURL?, title:String?)->())? = nil
 
+    public var enableOpenInSafari = false
+    public var openInSafariText = "Open in Safari"
+    
+    
     let shareButton = UIButton()
     let closeButton = UIButton()
+    let safariButton = UIButton()
+    let titleLabel = UILabel()
+    let backButton = UIButton()
+    let forwardButton = UIButton()
 
+    
+    
+    
     public init(url:String){
         initialURL = url
         super.init(nibName: nil, bundle: nil)
@@ -34,6 +45,9 @@ public class KireiWebViewController: UIViewController {
         webView = WKWebView()
         layout()
         setupButtonActions()
+        
+        webView.navigationDelegate = self
+        
         if let url = NSURL(string: initialURL){
             webView.loadRequest(NSURLRequest(URL: url))
         }
@@ -41,10 +55,45 @@ public class KireiWebViewController: UIViewController {
     
     
     
+    public func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        titleLabel.text = webView.title
+        
+        if webView.backForwardList.backList.count > 0 {
+            backButton.enabled = true
+        }
+        else {
+            backButton.enabled = false
+        }
+        
+        if webView.backForwardList.forwardList.count > 0 {
+            forwardButton.enabled = true
+        }
+        else {
+            forwardButton.enabled = false
+        }
+    }
     
+    
+    
+
     func setupButtonActions() {
         shareButton.addTarget(self, action: "didTapShareButton", forControlEvents: UIControlEvents.TouchUpInside)
         closeButton.addTarget(self, action: "didTapCloseButton", forControlEvents: UIControlEvents.TouchUpInside)
+        safariButton.addTarget(self, action: "didTapSafariButton", forControlEvents: UIControlEvents.TouchUpInside)
+        backButton.addTarget(self, action: "didTapBackButton", forControlEvents: UIControlEvents.TouchUpInside)
+        forwardButton.addTarget(self, action: "didTapForwardButton", forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    func didTapBackButton() {
+        webView.goBack()
+    }
+    
+    func didTapForwardButton() {
+        webView.goForward()
+    }
+    
+    func didTapSafariButton() {
+        openSafari(webView.URL)
     }
     
     func didTapCloseButton() {

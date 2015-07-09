@@ -63,9 +63,7 @@ extension KireiWebViewController {
         
         closeButton.setImage(imageNamed("close"), forState: UIControlState.Normal)
         
-        let titleLabel = UILabel()
         titleLabel.font = hirakakuFont(14)
-        titleLabel.text = "KireiKirei-Web View Made with London"
         titleLabel.textColor = UIColor(white: 134/255, alpha: 1)
         
         rect.addSubview(closeButton)
@@ -89,25 +87,22 @@ extension KireiWebViewController {
         }
     }
     
-    func layoutFooter(footer:UIView) {
-        let backButton = UIButton()
-        let nextButton = UIButton()
-        
+    func layoutFooter(footer:UIView) {        
         backButton.setImage(imageNamed("back"), forState: .Normal)
-        nextButton.setImage(imageNamed("next"), forState: .Normal)
+        forwardButton.setImage(imageNamed("next"), forState: .Normal)
         
         backButton.enabled = false
-        nextButton.enabled = false
+        forwardButton.enabled = false
         
         footer.addSubview(backButton)
-        footer.addSubview(nextButton)
+        footer.addSubview(forwardButton)
         
         backButton.snp_makeConstraints { make in
             make.size.equalTo(44)
             make.left.equalTo(footer)
             make.centerY.equalTo(footer)
         }
-        nextButton.snp_makeConstraints { make in
+        forwardButton.snp_makeConstraints { make in
             make.size.equalTo(44)
             make.left.equalTo(backButton.snp_right).offset(2)
             make.centerY.equalTo(footer)
@@ -121,8 +116,7 @@ extension KireiWebViewController {
             make.centerY.equalTo(footer)
         }
         
-        let safariButton = UIButton()
-        safariButton.setTitle("Safariでみる", forState: .Normal)
+        safariButton.setTitle(openInSafariText, forState: .Normal)
         safariButton.setTitleColor(UIColor(white: 134/255, alpha: 1), forState: .Normal)
         safariButton.setTitleColor(UIColor(white: 134/255, alpha: 0.75), forState: UIControlState.Highlighted)
         safariButton.titleLabel?.font = hirakakuFont(14)
@@ -130,6 +124,10 @@ extension KireiWebViewController {
         safariButton.snp_makeConstraints { make in
             make.center.equalTo(footer)
             make.height.equalTo(footer)
+        }
+        
+        if enableOpenInSafari == false {
+            safariButton.hidden = true
         }
     }
 }
