@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A046DA04FCAF884C158875DD /* Pods_KireiWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DE84F596298172996B1BC3 /* Pods_KireiWebView.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B09AB37C1B4E01F900637342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB37B1B4E01F900637342 /* AppDelegate.swift */; };
 		B09AB37E1B4E01F900637342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB37D1B4E01F900637342 /* ViewController.swift */; };
 		B09AB3811B4E01F900637342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09AB37F1B4E01F900637342 /* Main.storyboard */; };
-		B09AB3831B4E01F900637342 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09AB3821B4E01F900637342 /* Images.xcassets */; };
 		B09AB3861B4E01F900637342 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09AB3841B4E01F900637342 /* LaunchScreen.xib */; };
 		B09AB3921B4E01F900637342 /* KireiWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB3911B4E01F900637342 /* KireiWebViewTests.swift */; };
+		B09AB39D1B4E024D00637342 /* KireiWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB39C1B4E024D00637342 /* KireiWebViewController.swift */; };
+		B09AB39F1B4E0AAE00637342 /* NSTimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB39E1B4E0AAE00637342 /* NSTimerEx.swift */; };
+		B09AB3A21B4E15BF00637342 /* KireiWebView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09AB3A11B4E15BF00637342 /* KireiWebView.xcassets */; };
+		B09AB3A41B4E586B00637342 /* KireiWebViewController+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB3A31B4E586B00637342 /* KireiWebViewController+Design.swift */; };
+		B09AB3A61B4E58E400637342 /* KireiWebViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09AB3A51B4E58E400637342 /* KireiWebViewController+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99154BEE08EDDC3BD705EC2C /* Pods-KireiWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KireiWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KireiWebView/Pods-KireiWebView.debug.xcconfig"; sourceTree = "<group>"; };
 		B09AB3761B4E01F900637342 /* KireiWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KireiWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09AB37A1B4E01F900637342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09AB37B1B4E01F900637342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09AB37D1B4E01F900637342 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B09AB3801B4E01F900637342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B09AB3821B4E01F900637342 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B09AB3851B4E01F900637342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B09AB38B1B4E01F900637342 /* KireiWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KireiWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09AB3901B4E01F900637342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09AB3911B4E01F900637342 /* KireiWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KireiWebViewTests.swift; sourceTree = "<group>"; };
+		B09AB39C1B4E024D00637342 /* KireiWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KireiWebViewController.swift; sourceTree = "<group>"; };
+		B09AB39E1B4E0AAE00637342 /* NSTimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimerEx.swift; sourceTree = "<group>"; };
+		B09AB3A11B4E15BF00637342 /* KireiWebView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KireiWebView.xcassets; sourceTree = "<group>"; };
+		B09AB3A31B4E586B00637342 /* KireiWebViewController+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KireiWebViewController+Design.swift"; sourceTree = "<group>"; };
+		B09AB3A51B4E58E400637342 /* KireiWebViewController+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KireiWebViewController+Util.swift"; sourceTree = "<group>"; };
+		B0DE84F596298172996B1BC3 /* Pods_KireiWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KireiWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F061990B1A19422BF5F8FC39 /* Pods-KireiWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KireiWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-KireiWebView/Pods-KireiWebView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A046DA04FCAF884C158875DD /* Pods_KireiWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6CAE23084452FC3842041B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0DE84F596298172996B1BC3 /* Pods_KireiWebView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97A343660556E94E3AB79EEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99154BEE08EDDC3BD705EC2C /* Pods-KireiWebView.debug.xcconfig */,
+				F061990B1A19422BF5F8FC39 /* Pods-KireiWebView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B09AB36D1B4E01F900637342 = {
 			isa = PBXGroup;
 			children = (
 				B09AB3781B4E01F900637342 /* KireiWebView */,
 				B09AB38E1B4E01F900637342 /* KireiWebViewTests */,
 				B09AB3771B4E01F900637342 /* Products */,
+				97A343660556E94E3AB79EEB /* Pods */,
+				3D6CAE23084452FC3842041B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +109,14 @@
 		B09AB3781B4E01F900637342 /* KireiWebView */ = {
 			isa = PBXGroup;
 			children = (
+				B09AB3A01B4E15BF00637342 /* Resources */,
+				B09AB39B1B4E023D00637342 /* Classes */,
 				B09AB37B1B4E01F900637342 /* AppDelegate.swift */,
 				B09AB37D1B4E01F900637342 /* ViewController.swift */,
 				B09AB37F1B4E01F900637342 /* Main.storyboard */,
-				B09AB3821B4E01F900637342 /* Images.xcassets */,
 				B09AB3841B4E01F900637342 /* LaunchScreen.xib */,
 				B09AB3791B4E01F900637342 /* Supporting Files */,
+				B09AB39E1B4E0AAE00637342 /* NSTimerEx.swift */,
 			);
 			path = KireiWebView;
 			sourceTree = "<group>";
@@ -112,6 +146,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B09AB39B1B4E023D00637342 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB39C1B4E024D00637342 /* KireiWebViewController.swift */,
+				B09AB3A31B4E586B00637342 /* KireiWebViewController+Design.swift */,
+				B09AB3A51B4E58E400637342 /* KireiWebViewController+Util.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B09AB3A01B4E15BF00637342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B09AB3A11B4E15BF00637342 /* KireiWebView.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B09AB3951B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebView" */;
 			buildPhases = (
+				7F3B8C42A3D21B5177539D65 /* Check Pods Manifest.lock */,
 				B09AB3721B4E01F900637342 /* Sources */,
 				B09AB3731B4E01F900637342 /* Frameworks */,
 				B09AB3741B4E01F900637342 /* Resources */,
+				B9B8317EA2E0BE73DF0D3954 /* Embed Pods Frameworks */,
+				4B94CF127CBC4B09B9D417A0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09AB3811B4E01F900637342 /* Main.storyboard in Resources */,
+				B09AB3A21B4E15BF00637342 /* KireiWebView.xcassets in Resources */,
 				B09AB3861B4E01F900637342 /* LaunchScreen.xib in Resources */,
-				B09AB3831B4E01F900637342 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +262,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B94CF127CBC4B09B9D417A0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KireiWebView/Pods-KireiWebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F3B8C42A3D21B5177539D65 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B8317EA2E0BE73DF0D3954 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KireiWebView/Pods-KireiWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B09AB3721B4E01F900637342 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09AB3A41B4E586B00637342 /* KireiWebViewController+Design.swift in Sources */,
+				B09AB39D1B4E024D00637342 /* KireiWebViewController.swift in Sources */,
+				B09AB39F1B4E0AAE00637342 /* NSTimerEx.swift in Sources */,
 				B09AB37E1B4E01F900637342 /* ViewController.swift in Sources */,
+				B09AB3A61B4E58E400637342 /* KireiWebViewController+Util.swift in Sources */,
 				B09AB37C1B4E01F900637342 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +447,7 @@
 		};
 		B09AB3961B4E01F900637342 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99154BEE08EDDC3BD705EC2C /* Pods-KireiWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KireiWebView/Info.plist;
@@ -350,6 +458,7 @@
 		};
 		B09AB3971B4E01F900637342 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F061990B1A19422BF5F8FC39 /* Pods-KireiWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KireiWebView/Info.plist;
@@ -411,6 +520,7 @@
 				B09AB3971B4E01F900637342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B09AB3981B4E01F900637342 /* Build configuration list for PBXNativeTarget "KireiWebViewTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +529,7 @@
 				B09AB39A1B4E01F900637342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
