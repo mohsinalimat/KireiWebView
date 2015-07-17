@@ -2,10 +2,13 @@
 # KireiWebView
 Simple and Clean design WebViewController.
 
+
+![ScreenShot](https://raw.githubusercontent.com/entotsu/KireiWebView/master/ScreenShot.png)
+
 # Simple usage
 
 ```
-let url = "http://twitter.com"
+let url = "http://google.com"
 let kireiWebView = KireiWebViewController(url: url)
 self.presentViewController(kireiWebView, animated: true, completion: nil)
 ```
