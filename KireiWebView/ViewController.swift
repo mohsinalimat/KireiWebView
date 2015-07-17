@@ -30,15 +30,14 @@ class ViewController: UIViewController {
     func didTapButton() {
         let url = "http://twitter.com"
         let kireiWebView = KireiWebViewController(url: url)
-        kireiWebView.enableOpenInSafari = true
-        kireiWebView.openInSafariText = "Safariでみる"
-        kireiWebView.enablePcUserAgent = true
-        kireiWebView.shareButtonAction = { url, title in
-            println(title)
-            println(url)
-        }
+//        kireiWebView.enableOpenInSafari = true
+//        kireiWebView.openInSafariText = "Safariでみる"
+//        kireiWebView.enablePcUserAgent = true
+//        kireiWebView.shareButtonAction = { url, title in
+//            println(title)
+//            println(url)
+//        }
         self.presentViewController(kireiWebView, animated: true, completion: nil)
     }
-
 }
 
